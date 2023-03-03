@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from "react";
+import { Counter } from "./Counter";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -48,7 +49,8 @@ function App() {
             {/* On affiche que les items filtrés */}
         {filteredItems.map((item) => (
                 <div key={item}>{item}</div>
-            ))}
+        ))}
+        <Counter />
         </>
     );
 }
